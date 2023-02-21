@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .container{
+    display: flex;
+    border: 1px solid grey;
+    max-width: 400px;
+    min-height: 600px;
+  }
+  .item{
+    background: tomato;
+    margin: 5px;
+    font-size: 1.5rem;
+  }
+  .column{
+    flex-direction: column;
+    max-height: 500px;
+  }
+  .stretch{
+    align-items: stretch;
+  }
+
+  .flex-start{
+    align-items: flex-start;
+  }
+  .flex-end{
+    align-items: flex-end;
+  }
+
+  .center{
+    align-items: center;
+  }
+  .baseline{
+    align-items: baseline;
+  }
+</style>
+<!--ALIGN-ITEMS-->
+<body>
+  
+  <h1>align-items: flex-stretch;</h1>  <!-- O atalho stretch permite que os itens sejam alinhados com as mesma altura -->
+  <section class="container stretch">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: flex-start;</h1>  <!-- Este permite que horizontalmente os itens se alinhe no ínicio -->
+  <section class="container flex-start">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: flex-end;</h1>  <!-- Este permite que horizontalmente os itens se alinhe no final -->
+  <section class="container flex-end">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: center;</h1>  <!-- Este permite que horizontalmente os itens se alinhe no centro -->
+  <section class="container center">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: baseline;</h1>  <!-- Este permite que horizontalmente os itens se alinhe de acordo com o ínicio da tipografia -->
+  <section class="container baseline">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: flex-stretch; //column</h1>  <!-- O atalho stretch permite que os itens sejam alinhados com as mesma altura -->
+  <section class="container column stretch">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: flex-start;//column</h1>  <!-- Este permite que horizontalmente os itens se alinhe no ínicio -->
+  <section class="container column flex-start">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: flex-end;//column</h1>  <!-- Este permite que horizontalmente os itens se alinhe no final -->
+  <section class="container column flex-end">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: center;//column</h1>  <!-- Este permite que horizontalmente os itens se alinhe no centro -->
+  <section class="container column center">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+
+  <h1>align-items: baseline;//column</h1>  <!-- Este permite que horizontalmente os itens se alinhe de acordo com o ínicio da tipografia -->
+  <section class="container column baseline">
+    <div class="item">1</div>
+    <div class="item">Teste 2 do Item</div>
+    <div class="item">Teste 3 do Item Agora Mesmo</div>
+    <div class="item">Teste 4</div>
+  </section>
+</body>
+</html>

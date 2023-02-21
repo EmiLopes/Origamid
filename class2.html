@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    display: flex;
+    max-width: 400px;
+    border: 1px solid grey;
+   
+  }
+
+  .row{
+    flex-direction: row;
+  }
+  .row-reverse{
+    flex-direction: row-reverse;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .column-reverse{
+    flex-direction: column-reverse;
+  }
+
+  .item{
+    margin: 5px;
+    background: tomato;
+    font-size: 1.5em;
+    flex: 1;
+    text-align: center;
+  }
+</style>
+<body>
+  <!--FLEX DIRECTION-->
+  <h1>Flex-direction: row;</h1>
+  <section class="container row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </section>
+  <h1>Flex-direction: row-reverse;</h1>
+  <section class="container row-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </section>
+  <h1>Flex-direction: column;</h1>
+  <section class="container column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </section>
+  <h1>Flex-direction: column-reverse;</h1>
+  <section class="container column-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </section>
+</body>
+</html>
